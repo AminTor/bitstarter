@@ -12,7 +12,7 @@ var filename = '/home/ubuntu/bitstarter/index.html';
 
 
 app.get('/', function(request, response) {
-    response.send('Hellow world test');
+    response.send(fs.readFileSync('/home/ubuntu/bitstarter/index.html').toString("UTF-8"));
 });
 
 var port = process.env.PORT || 5000;
