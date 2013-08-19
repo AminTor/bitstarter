@@ -12,7 +12,6 @@ var filename = '/home/ubuntu/bitstarter/index.html';
 
 
 app.get('/', function(request, response) {
-    response.send('Hello world22222211!');
     response.send(fs.readFileSync('index.html').toString("UTF-8"));
 });
 
